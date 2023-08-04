@@ -1,0 +1,41 @@
+// Footer
+.footer {
+    display: flex;
+    width: 100%;
+    background-color: #3D4050;
+    padding: 30px 375px;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 1680px) {
+        flex-wrap: wrap;
+        padding: 30px 150px;
+        gap: 10px;
+    }
+
+    @media (max-width: 770px) {
+        padding: 30px 20px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        color: #C3C3C3;
+        font-family: Lato;
+        font-size: 13px;
+
+        &-link {
+            color: #C3C3C3;
+            text-decoration: none;
+            font-family: Lato;
+            font-size: 13px;
+        }
+    }
+
+    &__line {
+        height: 18px;
+        border: 1px solid #C3C3C3;
+    }
+}
